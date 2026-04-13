@@ -75,5 +75,5 @@ export CPPFLAGS
 # now compile ourself
 echo "Compiling DOSBox-X"
 chmod +x configure
-./configure --enable-debug --disable-avcodec --enable-d3d9 --enable-d3d-shaders --disable-libfluidsynth --prefix=/usr "${@}" || exit 1
+./configure --enable-debug --disable-avcodec --enable-d3d9 --enable-d3d-shaders --disable-libfluidsynth -lpropsys --prefix=/usr "${@}" || exit 1
 make -j3 || exit 1
